@@ -1,0 +1,247 @@
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 70px;
+  background-color: #0F0F70; 
+  height: 100vh; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold;
+  display: block; 
+}
+
+
+.sub-menu li {
+  color: black; 
+}
+
+.sub-menu li:hover {
+  background-color: lightgray;
+}
+.secondary-sidebar {
+  width: 235px;
+  background-color: white;
+  height: 100vh;
+  position: fixed; 
+  top: 0;
+  left: 70px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+.secondary-sidebar h3 {
+  margin-bottom: 20px; 
+}
+
+.secondary-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.secondary-sidebar ul li {
+  margin-bottom: 10px; 
+  width: 150px;
+  height: 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  color: black; 
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px; 
+  transition: background-color 0.3s, color 0.3s; 
+  padding-left: 10px; 
+}
+
+.secondary-sidebar ul li:hover {
+  background-color: #e0e0e0; 
+}
+
+.secondary-sidebar ul li.active {
+  background-color: #0F0F70; 
+  color: orange; 
+  border: 1px solid #0F0F70; 
+}
+
+.main-content {
+  margin-left: 300px; 
+  padding: 20px;
+  background-color: #EDF0F4;
+  width: calc(100% - 270px);
+}
+
+.container, .content_wrap, .form-wrap {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px; 
+}
+
+.journal_title {
+  font-size: 24px;
+  margin-bottom: 20px; 
+}
+
+.loading-spinner-container {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7); 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000;
+}
+
+.loading-spinner i {
+  font-size: 50px; 
+  color: #007BFF;
+}
+.upload-history-table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.upload-history-table th,
+.upload-history-table td {
+  padding: 8px; 
+  line-height: 1.2; 
+  text-align: left;
+}
+
+.upload-history-table th {
+  background-color: #f0f0f0; 
+}
+
+.upload-history-table th:nth-child(1),
+.upload-history-table td:nth-child(1) {
+  width: 10%; 
+}
+
+.upload-history-table th:nth-child(2),
+.upload-history-table td:nth-child(2) {
+  width: 20%; 
+}
+
+.upload-history-table th:nth-child(3),
+.upload-history-table td:nth-child(3) {
+  width: 70%; 
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  background-color: transparent;
+  color: black; 
+  border: 1px solid #d3d3d3; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #d3d3d3; 
+}
+
+.pagination-button:disabled {
+  background-color: transparent; 
+  color: gray; 
+  cursor: not-allowed; 
+}
+
+.pagination-button.active {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+
+.warning-message {
+  color: red;
+  margin-left: 0;
+  margin-top: 5px;
+}
+.info-box {
+  border: 1px solid black; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin-bottom: 10px;
+}
+
+.dropdown-content {
+  width: 200px;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  padding: 10px;
+  margin-left: 2px;
+  margin-top: 5px; 
+}
+
+.dropdown-content p {
+  margin: 5px 0; 
+  color: #333; 
+}
+
+
+.dropdown-content button {
+  background-color: #007bff;
+  color: white;
+  border: none; 
+  border-radius: 4px;
+  padding: 5px 10px; 
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #0056b3; 
+}
+.input-wrapper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  width: 60px;
+}
+
+.input-wrapper span {
+  margin-left: 5px;
+}

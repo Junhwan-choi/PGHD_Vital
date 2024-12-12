@@ -1,0 +1,143 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.preprocess-table {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    table-layout: fixed;
+}
+
+.preprocess-table th,
+.preprocess-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    word-wrap: break-word;
+}
+
+.preprocess-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.preprocess-table th:nth-child(1),
+.preprocess-table td:nth-child(1) {
+    width: 300px;
+}
+
+.preprocess-table th:nth-child(2),
+.preprocess-table td:nth-child(2) {
+    width: 250px;
+}
+
+.preprocess-table th:nth-child(n+3),
+.preprocess-table td:nth-child(n+3) {
+    width: 100px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 150px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #565e64;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+    }
+
+    .preprocess-table {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .preprocess-table th,
+    .preprocess-table td {
+        padding: 10px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .preprocess-table th:nth-child(1),
+    .preprocess-table td:nth-child(1) {
+        width: 220px;
+    }
+
+    .preprocess-table th:nth-child(2),
+    .preprocess-table td:nth-child(2) {
+        width: 220px;
+    }
+
+    .preprocess-table th:nth-child(n+3),
+    .preprocess-table td:nth-child(n+3) {
+        width: 70px;
+    }
+}

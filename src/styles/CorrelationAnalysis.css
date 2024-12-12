@@ -1,0 +1,14 @@
+.layout {
+    display: flex;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .CorrelationAnalysis_box {
+    width: 100%; 
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: none; 
+}
